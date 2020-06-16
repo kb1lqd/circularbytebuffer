@@ -2,10 +2,8 @@
 * @file ring.h
 * @author Brenton Salmi, KB1LQD
 * @date 15 June, 2020
-* @brief A simple circular byte buffer implementation.
+* @brief Function prototypes for the circular byte buffer.
 *
-* This is a simple implementation of a byte circular buffer that stores and
-* retrieves data as a First-in-first-out (FIFO).
 */
 
 #ifndef RING_H_

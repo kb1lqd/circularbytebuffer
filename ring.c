@@ -1,16 +1,19 @@
 /*
- * Circular Buffer implementation
- *
- * Needs:
- * - Initializae buffer and control logic
- * - Put byte(s) into buffer
- * - Get byte(s) from buffer
- * - Query buffer size
- * - Handle overflow condition
- *
- */
+* @file ring.c
+* @author Brenton Salmi, KB1LQD
+* @date 15 June, 2020
+* @brief A simple circular byte buffer implementation.
+*
+* This is a simple implementation of a byte circular buffer that stores and
+* retrieves data as a First-in-first-out (FIFO).
+*/
 
+/* -- Includes -- */
+
+/* libc includes. */
 #include <stdio.h>
+
+/* specific includes. */
 #include "ring.h"
 
 void RingInitBuffer(struct ring_buffer_control *rbufcntl, unsigned char *rbuf, unsigned int bufferbytesize)
